@@ -63,7 +63,7 @@ export default function Dashboard() {
             <span style={{ fontFamily: 'JetBrains Mono, monospace', fontWeight: 800, fontSize: '0.7rem', color: '#fff' }}>TS</span>
           </div>
           <span style={{ fontFamily: 'var(--font-logo)', fontWeight: 700, fontSize: '1.2rem', letterSpacing: '-0.03em', color: '#fff' }}>
-            TRUSCOR
+            SCOR AI
           </span>
         </div>
         

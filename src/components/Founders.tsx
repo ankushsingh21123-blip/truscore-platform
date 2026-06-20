@@ -7,31 +7,20 @@ import Image from 'next/image';
 
 const founders = [
   {
-    name: 'Gautam Patil',
-    title: 'Founding CEO & CTO',
-    role: 'Visionary · S.O.V.A Engine and TAFAAR framework architect',
-    metric1: { val: '12+', label: 'Years AI/ML' },
-    metric2: { val: '40+', label: 'Enterprise Deployments' },
-    about: 'Built the core offensive and actuarial IP from first principles across attack simulation and financial risk scoring.',
-    contact: 'gautam@truscor.org',
-    github: 'https://github.com/Gautam-R-Patil/TRUSCOR-ui',
-    image: '/founder2.jpg',
-  },
-  {
-    name: 'Dheeraj S',
-    title: 'Founding Partner · Operations & Revenue',
-    role: 'Market expansion · Insurance partnerships · Revenue execution',
-    metric1: { val: '6+', label: 'Years Market Ops' },
-    metric2: { val: '100+', label: 'Enterprise Pipelines' },
-    about: 'Scaled outbound enterprise pipelines and leads GTM for underwriter channels, broker relationships, and enterprise deals.',
-    contact: 'dheeraj@truscor.org',
-    github: 'https://github.com/Gautam-R-Patil/TRUSCOR-ui',
-    image: '/founder1.jpg',
+    name: 'Ankush Singh Rajput',
+    title: 'Founder & CEO, Hy Cloud',
+    role: 'Concept · IP architecture · Commercial vision',
+    metric1: { val: 'Scaler', label: 'School of Tech' },
+    metric2: { val: 'BITS', label: 'Pilani' },
+    about: '',
+    contact: 'ankushsingh21123@gmail.com',
+    github: 'https://github.com/ankushsingh21123-blip',
+    image: '/founder2.png',
   },
 ];
 
 const milestones = [
-  { year: '2023', event: 'TRUSCOR incorporated — AI Act mandate identified' },
+  { year: '2023', event: 'SCORAI incorporated — AI Act mandate identified' },
   { year: '2024', event: 'Jarvis probe engine v1 — 500+ adversarial tests' },
   { year: '2025', event: 'First SRS certificate issued — Grade A, insurer validated' },
   { year: '2026', event: 'Series A readiness — $400B market entry' },
@@ -56,12 +45,12 @@ export default function Founders() {
             <span className="text-gradient-silver">not theorists.</span>
           </h2>
           <p style={{ color: '#616161', maxWidth: '500px', margin: '0 auto', lineHeight: 1.65, fontSize: '0.95rem' }}>
-            TRUSCOR was founded by AI engineers and financial risk professionals who lived the problem before building the solution.
+            SCORAI was founded to solve the AI risk quantification problem from first principles.
           </p>
         </motion.div>
 
         {/* Founder cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,minmax(280px,1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem', marginBottom: '4rem', maxWidth: '520px', margin: '0 auto 4rem auto' }}>
           {founders.map((f, i) => (
             <motion.div
               key={i}
@@ -75,8 +64,8 @@ export default function Founders() {
                 border: '1px solid #1a1a1a',
                 background: '#080808',
               }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '120px 1fr', gap: '1rem', alignItems: 'start' }}>
-                <div style={{ position: 'relative', height: 145, borderRadius: 14, overflow: 'hidden', border: '1px solid #262626' }}>
+              <div className="responsive-flex-row" style={{ gap: '1.25rem', alignItems: 'start' }}>
+                <div style={{ position: 'relative', height: 145, width: 120, borderRadius: 14, overflow: 'hidden', border: '1px solid #262626', flexShrink: 0 }}>
                   <Image src={f.image} alt={f.name} fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div>

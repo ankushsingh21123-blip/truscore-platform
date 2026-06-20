@@ -65,7 +65,7 @@ function TerminalCard({ step }: { step: typeof features[0] }) {
           marginLeft: '0.5rem', fontFamily: 'JetBrains Mono,monospace',
           fontSize: '0.66rem', color: '#383838', letterSpacing: '0.08em',
         }}>
-          truscor · {step.tag}
+          scorai · {step.tag}
         </span>
       </div>
       {/* body */}
@@ -108,11 +108,11 @@ export default function Features() {
             <span className="text-gradient-silver">certificate in 24h</span>
           </h2>
           <p style={{ color: '#616161', maxWidth: '520px', margin: '0 auto', lineHeight: 1.65, fontSize: '0.975rem' }}>
-            60% of TRUSCOR's value is in Actuarial/Insurance finance modeling. 40% is our S.O.V.A/Jarvis offensive testing tech moat. Together, they form an urgent necessity for AI deployment.
+            60% of SCOR AI's value is in Actuarial/Insurance finance modeling. 40% is our S.O.V.A/Jarvis offensive testing tech moat. Together, they form an urgent necessity for AI deployment.
           </p>
         </div>
 
-        <div className="features-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+        <div className="responsive-grid-2 features-grid" style={{ alignItems: 'start' }}>
           {/* Step list */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             {features.map((f, i) => (
@@ -184,7 +184,6 @@ export default function Features() {
         </div>
       </div>
 
-      <style>{`@media(max-width:900px){.features-grid{grid-template-columns:1fr!important; gap:2.5rem!important;}}`}</style>
     </section>
   );
 }

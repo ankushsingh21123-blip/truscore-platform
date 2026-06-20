@@ -72,7 +72,7 @@ function AuditCTA() {
             <span style={{ display:'inline-block', marginBottom:'1.5rem', fontFamily:'JetBrains Mono,monospace', fontSize:'0.68rem', color:'#4d4d4d', letterSpacing:'0.16em', textTransform:'uppercase' }}>Step 01 / 03</span>
             <h3 style={{ fontSize:'1.5rem', fontWeight:800, marginBottom:'0.75rem', letterSpacing:'-0.04em' }}>Connect AI Endpoint</h3>
             <p style={{ color:'#666666', marginBottom:'1.75rem', lineHeight:1.65, fontSize:'0.9rem' }}>
-              Point TRUSCOR at any REST, GraphQL, or WebSocket AI agent. Jarvis handles target identification autonomously.
+              Point SCOR AI at any REST, GraphQL, or WebSocket AI agent. Jarvis handles target identification autonomously.
             </p>
             <input type="text" placeholder="https://api.your-agent.ai/v1"
               value={endpoint} onChange={e => setEndpoint(e.target.value)} style={inputStyle}
@@ -163,7 +163,7 @@ function EnterpriseSection() {
               Built for the scale of<br /><span className="text-gradient-silver">institutional AI.</span>
             </h2>
             <p style={{ color: '#616161', lineHeight:1.7, fontSize:'0.95rem', marginBottom:'2.5rem' }}>
-              From Fortune 500 CI/CD pipelines to insurer due-diligence portals — TRUSCOR Jarvis integrates where your AI runs, silently and continuously.
+              From Fortune 500 CI/CD pipelines to insurer due-diligence portals — SCOR AI Jarvis integrates where your AI runs, silently and continuously.
             </p>
             <div style={{ display:'flex', flexDirection:'column', gap:'0.75rem' }}>
               {['SOC 2 Type II compliant audit infrastructure','GDPR & EU AI Act regulatory mapping built-in','Single-tenant deployment for regulated industries','Board-ready PDF with insurer sign-off templates'].map((item,i) => (
@@ -223,10 +223,10 @@ function Footer() {
         {/* Bottom bar */}
         <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', paddingTop:'3rem', borderTop:'1px solid #0d0d0d', flexWrap:'wrap', gap:'1.5rem' }}>
           <div style={{ display:'flex', alignItems:'center', gap:'0.65rem' }}>
-            <span style={{ fontWeight:700, fontSize:'0.88rem', letterSpacing:'-0.02em', color: '#737373' }}>TRUSCOR</span>
+            <span style={{ fontWeight:700, fontSize:'0.88rem', letterSpacing:'-0.02em', color: '#737373' }}>SCOR AI</span>
           </div>
           <div style={{ fontFamily:'JetBrains Mono,monospace', fontSize:'0.7rem', color:'#383838' }}>
-            © 2026 TRUSCOR · All rights reserved.
+            © 2026 SCOR AI · All rights reserved.
           </div>
           <a
             href="https://github.com/ankushsingh21123-blip"

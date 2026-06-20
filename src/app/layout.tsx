@@ -2,28 +2,28 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'TRUSCOR — AI Risk Quantification Platform',
+  title: 'SCOR AI — AI Risk Quantification Platform',
   description:
-    'TRUSCOR is the definitive risk scoring platform for enterprise AI. The FICO Score equivalent for AI — quantifying semantic risk into deterministic financial exposure for insurers, regulators, and CFOs.',
+    'SCOR AI is the definitive risk scoring platform for enterprise AI. The FICO Score equivalent for AI — quantifying semantic risk into deterministic financial exposure for insurers, regulators, and CFOs.',
   keywords: [
     'AI risk quantification', 'AI audit', 'semantic risk score',
     'AI liability', 'Jarvis AI probe', 'AI insurance',
-    'EU AI Act compliance', 'AI governance', 'TRUSCOR',
+    'EU AI Act compliance', 'AI governance', 'SCOR AI',
   ],
-  authors: [{ name: 'TRUSCOR', url: 'https://truscor.org' }],
-  creator: 'TRUSCOR',
+  authors: [{ name: 'SCOR AI', url: 'https://scorai.org' }],
+  creator: 'SCOR AI',
   openGraph: {
-    title: 'TRUSCOR — AI Risk Quantification Platform',
+    title: 'SCOR AI — AI Risk Quantification Platform',
     description: 'The FICO Score for enterprise AI. Get your Semantic Risk Score in 24 hours.',
-    url: 'https://truscor.org',
-    siteName: 'TRUSCOR',
+    url: 'https://scorai.org',
+    siteName: 'SCOR AI',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TRUSCOR — AI Risk Quantification Platform',
+    title: 'SCOR AI — AI Risk Quantification Platform',
     description: 'The FICO Score for enterprise AI. Get your Semantic Risk Score in 24 hours.',
-    creator: '@truscor',
+    creator: '@scorai',
   },
   robots: { index: true, follow: true },
 };

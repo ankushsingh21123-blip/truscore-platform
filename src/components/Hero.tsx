@@ -107,7 +107,7 @@ export default function Hero() {
           transition={{ duration: 1.4, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
           style={{ textAlign: 'center', marginBottom: '1.75rem' }}
         >
-          <h1 style={{
+          <h1 className="hero-title" style={{
             fontSize: 'clamp(3.2rem, 8vw, 7rem)',
             fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 0.95,
             color: '#f5f5f5', margin: '0 auto', maxWidth: '1000px',
@@ -136,14 +136,15 @@ export default function Hero() {
             lineHeight: 1.7, fontWeight: 400,
           }}
         >
-          Unassessed AI is an existential liability. TRUSCOR converts AI uncertainty into a mandatory, board-level financial rating.{' '}
+          Unassessed AI is an existential liability. SCOR AI converts AI uncertainty into a mandatory, board-level financial rating.{' '}
           <strong style={{ color: '#b0b0b0', fontWeight: 600 }}>
             60% Actuarial &amp; Insurance modeling, 40% deep S.O.V.A/Jarvis testing tech.
           </strong>
         </motion.p>
 
         {/* CTA buttons */}
-        <motion.div
+          <motion.div
+          className="hero-buttons"
           initial={{ opacity: 0, y: 25, filter: 'blur(8px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -208,7 +209,7 @@ export default function Hero() {
                 ))}
               </div>
               <span style={{ fontSize: '0.68rem', fontFamily: 'JetBrains Mono,monospace', color: '#383838', letterSpacing: '0.12em' }}>
-                truscor-finance-rating-v3.0 · LIVE
+                scorai-finance-rating-v3.0 · LIVE
               </span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                 <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#fff', animation: 'pulse-dot 2s ease-in-out infinite' }} />
@@ -238,7 +239,7 @@ export default function Hero() {
               ))}
 
               {/* Stats row */}
-              <div style={{ marginTop: '0.4rem', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '0.75rem' }}>
+              <div style={{ marginTop: '0.4rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '0.75rem' }}>
                 {[
                   { val: '60%', label: 'Finance & Actuary' },
                   { val: '40%', label: 'S.O.V.A/Jarvis Tech' },

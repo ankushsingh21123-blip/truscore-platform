@@ -486,10 +486,48 @@ canvas ~ div, canvas + div,
 }
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────────── */
+.responsive-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.responsive-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 900px) {
   :root { --section-padding: 6rem 0; }
   .container { padding: 0 1.25rem; }
+  
+  .responsive-grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  
+  .responsive-flex-row {
+    flex-direction: column !important;
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  /* Scale down large typography */
+  .hero-title {
+    font-size: clamp(3rem, 12vw, 4.5rem) !important;
+  }
+  
+  .hero-buttons {
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
+  }
 }
+
 @media (max-width: 640px) {
   :root { --section-padding: 4.5rem 0; }
+  
+  .mock-titlebar-text {
+    font-size: 0.55rem;
+  }
 }

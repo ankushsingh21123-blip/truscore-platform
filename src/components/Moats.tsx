@@ -32,7 +32,7 @@ const moats = [
   {
     size: '1-col', tag: 'Tech Moat (40%)',
     title: 'Semantic Drift Detection',
-    desc: 'TRUSCOR\'s tech moat includes continuous subscription probing that detects behavioral drift across prompt updates or fine-tuning.',
+    desc: 'SCOR AI\'s tech moat includes continuous subscription probing that detects behavioral drift across prompt updates or fine-tuning.',
     metric: '99.8%', metricLabel: 'drift detection',
   },
   {
@@ -61,7 +61,7 @@ export default function Moats() {
             <span className="text-gradient-silver">be replicated overnight.</span>
           </h2>
           <p style={{ color: '#616161', maxWidth: '480px', margin: '0 auto', lineHeight: 1.65, fontSize: '0.95rem' }}>
-            Each pillar of TRUSCOR represents years of IP in offensive AI research and actuarial financial modeling.
+            Each pillar of SCOR AI represents years of IP in offensive AI research and actuarial financial modeling.
           </p>
         </div>
 

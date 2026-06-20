@@ -31,11 +31,11 @@ const biz = [
   },
   {
     title: 'Insurance Premium Layer (60%)',
-    body: 'Every TRUSCOR rating serves as the foundational data layer for insurers. We convert technical vulnerabilities into concrete, insurable premiums.',
+    body: 'Every SCOR AI rating serves as the foundational data layer for insurers. We convert technical vulnerabilities into concrete, insurable premiums.',
   },
   {
     title: 'M&A Due Diligence (60%)',
-    body: 'During acquisitions, acquirers urgently need quantified AI risk exposure. TRUSCOR delivers a board-ready financial report that dictates deal valuation.',
+    body: 'During acquisitions, acquirers urgently need quantified AI risk exposure. SCOR AI delivers a board-ready financial report that dictates deal valuation.',
   },
   {
     title: 'S.O.V.A Testing Tech (40%)',
@@ -67,7 +67,7 @@ function FlatCard({ title, body, delay }: { title: string; body: string; delay: 
         flexDirection: 'column',
         gap: '1rem',
         width: '100%',
-        maxWidth: '400px',
+        maxWidth: '100%',
         textAlign: 'left'
       }}
     >
@@ -89,7 +89,7 @@ export default function BusinessModel() {
 
       <div className="container" style={{ position: 'relative', zIndex: 5 }}>
         {/* Header */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start', marginBottom: '5rem' }}>
+        <div className="responsive-grid-2" style={{ alignItems: 'start', marginBottom: '5rem' }}>
           <motion.div
             initial={{ opacity: 0, x: -30, filter: 'blur(8px)' }} 
             whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
@@ -101,7 +101,7 @@ export default function BusinessModel() {
               <span className="text-gradient-silver">underwriters and CFOs.</span>
             </h2>
             <p style={{ color: '#666666', lineHeight: 1.7, fontSize: '1rem', maxWidth: '420px' }}>
-              TRUSCOR provides the definitive risk score for AI, enabling informed decisions and secure deployments.
+              SCOR AI provides the definitive risk score for AI, enabling informed decisions and secure deployments.
               The FICO Score equivalent for the $400B enterprise AI deployment wave.
             </p>
           </motion.div>
@@ -154,7 +154,7 @@ export default function BusinessModel() {
         </div>
 
         {/* Business model flat cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.25rem' }}>
           {biz.map((card, i) => (
             <FlatCard key={i} title={card.title} body={card.body} delay={i * 0.08} />
           ))}

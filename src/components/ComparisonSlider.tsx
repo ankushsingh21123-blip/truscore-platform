@@ -54,7 +54,7 @@ export default function ComparisonSlider() {
               background: '#060606', border: '1px solid #0f0f0f',
             }}>
               <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#404040' }} />
-              <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#595959', fontFamily: 'JetBrains Mono,monospace' }}>Before TRUSCOR</span>
+              <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#595959', fontFamily: 'JetBrains Mono,monospace' }}>Before SCOR AI</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {before.map((item, i) => (
@@ -98,7 +98,7 @@ export default function ComparisonSlider() {
               background: '#080808', border: '1px solid #1a1a1a',
             }}>
               <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#fff', boxShadow: '0 0 8px #808080' }} />
-              <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#999999', fontFamily: 'JetBrains Mono,monospace' }}>After TRUSCOR</span>
+              <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', color: '#999999', fontFamily: 'JetBrains Mono,monospace' }}>After SCOR AI</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {after.map((item, i) => (

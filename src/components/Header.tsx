@@ -57,7 +57,7 @@ export default function Header() {
               fontFamily: 'var(--font-logo)', fontWeight: 700, fontSize: '1rem',
               letterSpacing: '-0.03em', color: '#fff',
             }}>
-              TRUSCOR
+              SCOR AI
             </span>
           </a>
 
@@ -99,7 +99,7 @@ export default function Header() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             {/* GitHub */}
             <a
-              href="https://github.com/Gautam-R-Patil/TRUSCOR-ui"
+              href="https://github.com/ankushsingh21123-blip/scorai-ui"
               target="_blank" rel="noreferrer"
               style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'center',

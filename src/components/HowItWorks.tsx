@@ -2,16 +2,15 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { UnicornBg } from './BusinessModel';
 
 const steps = [
   {
     id: '01',
     tag: 'Connect',
     title: 'Submit AI Endpoint',
-    body: 'Point TRUSCOR at any REST, GraphQL, or WebSocket AI agent. No SDK. No code changes. Jarvis identifies system prompt structure, tool schemas, and attack surface autonomously.',
+    body: 'Point SCOR AI at any REST, GraphQL, or WebSocket AI agent. No SDK. No code changes. Jarvis identifies system prompt structure, tool schemas, and attack surface autonomously.',
     code: [
-      '$ truscor init --target https://api.your-ai.com/v1',
+      '$ scorai init --target https://api.your-ai.com/v1',
       '→ Scanning endpoint architecture...',
       '→ System prompt detected: 1,204 tokens',
       '→ Tool schemas: 14 registered',
@@ -79,9 +78,6 @@ export default function HowItWorks() {
 
   return (
     <section id="how-it-works" className="section" style={{ position: 'relative', overflow: 'hidden', background: '#000' }}>
-      {/* Scene 5 — Metrics */}
-      <UnicornBg projectId="AjA7XKof5CTH0MDB0bvF" opacity={0.35} />
-
       <div className="container" style={{ position: 'relative', zIndex: 5 }}>
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 30, filter: 'blur(8px)' }} whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }} style={{ textAlign: 'center', marginBottom: '5rem' }}>
@@ -91,7 +87,7 @@ export default function HowItWorks() {
             <span className="text-gradient-silver">in four deterministic steps.</span>
           </h2>
           <p style={{ color: '#616161', maxWidth: '500px', margin: '0 auto', lineHeight: 1.65, fontSize: '0.95rem' }}>
-            No consultants. No integration. Jarvis attacks autonomously and TRUSCOR issues the definitive SRS grade.
+            No consultants. No integration. Jarvis attacks autonomously and SCOR AI issues the definitive SRS grade.
           </p>
         </motion.div>
 
@@ -210,7 +206,7 @@ export default function HowItWorks() {
                       marginLeft: '0.5rem', fontFamily: 'JetBrains Mono, monospace',
                       fontSize: '0.65rem', color: '#383838', letterSpacing: '0.1em',
                     }}>
-                      jarvis@truscor ~ {step.tag.toLowerCase()}
+                      jarvis@scorai ~ {step.tag.toLowerCase()}
                     </span>
                     <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '5px' }}>
                       <div style={{ width: 5, height: 5, borderRadius: '50%', background: '#fff', animation: 'pulse-dot 2s ease infinite' }} />

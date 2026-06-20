@@ -9,13 +9,13 @@ const pillars = [
     num: '01',
     tag: 'Finance & Actuarial · 60%',
     title: 'Actuarial MEL Risk Modeling',
-    body: 'We price AI risk using Modified Expected Loss — the same actuarial standard that underwrites property & casualty insurance. Every TRUSCOR rating converts AI uncertainty into a concrete dollar figure that CFOs, boards, and insurers can act on.',
+    body: 'We price AI risk using Modified Expected Loss — the same actuarial standard that underwrites property & casualty insurance. Every SCOR AI rating converts AI uncertainty into a concrete dollar figure that CFOs, boards, and insurers can act on.',
   },
   {
     num: '02',
     tag: 'Insurance · 60%',
     title: 'AI Liability Insurance Layer',
-    body: 'TRUSCOR functions as the critical data layer enabling the $40B AI insurance market. Our SRS certificate is the prerequisite for obtaining AI liability coverage — without a rating, your AI is uninsurable.',
+    body: 'SCOR AI functions as the critical data layer enabling the $40B AI insurance market. Our SRS certificate is the prerequisite for obtaining AI liability coverage — without a rating, your AI is uninsurable.',
   },
   {
     num: '03',
@@ -27,7 +27,7 @@ const pillars = [
     num: '04',
     tag: 'M&A & Compliance · 60%',
     title: 'Board-Grade Due Diligence',
-    body: 'During acquisitions, acquirers need quantified AI risk exposure. TRUSCOR delivers a 47-page board-ready report with insurer sign-off templates, EU AI Act mapping, and a concrete financial exposure number that drives deal valuation.',
+    body: 'During acquisitions, acquirers need quantified AI risk exposure. SCOR AI delivers a 47-page board-ready report with insurer sign-off templates, EU AI Act mapping, and a concrete financial exposure number that drives deal valuation.',
   },
 ];
 
@@ -103,7 +103,7 @@ export default function AboutBusiness() {
             margin: '0 auto 5rem auto', lineHeight: 1.75, fontSize: '1rem',
           }}
         >
-          TRUSCOR is the world&apos;s first AI risk quantification platform — the FICO Score equivalent for enterprise AI.
+          SCOR AI is the world&apos;s first AI risk quantification platform — the FICO Score equivalent for enterprise AI.
           We convert AI uncertainty into a deterministic, actuarial-grade financial rating that boards, insurers, and regulators can act on.
           <strong style={{ color: '#b3b3b3', fontWeight: 600 }}>
             {' '}60% Actuarial & Insurance finance modeling. 40% S.O.V.A/Jarvis offensive testing technology.
@@ -118,7 +118,7 @@ export default function AboutBusiness() {
           transition={{ duration: 1.1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
             gap: '1px',
             background: '#0f0f0f',
             borderRadius: '16px',
